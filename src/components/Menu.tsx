@@ -117,9 +117,12 @@ const Menu = () => {
                         className="w-full h-48 object-cover rounded-lg"
                       />
                       <div className="flex justify-between items-start mb-1">
-                        <h3 className="font-semibold text-slate-800">
+                        <a
+                          href={`#dish-${categoryIndex}-${itemIndex}`}
+                          className="font-semibold text-slate-800 hover:text-red-600 transition-colors cursor-pointer"
+                        >
                           {item.name}
-                        </h3>
+                        </a>
                         <Badge
                           variant="outline"
                           className="text-red-600 border-red-600"
